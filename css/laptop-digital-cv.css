@@ -1,0 +1,199 @@
+/* Large devices (laptops, 993px and up) */
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+#goals {
+  /* use the grid-area property to name grid items.
+     Refer to the name when you set up the grid layout */
+  grid-area: goals;
+}
+
+#scopes {
+  grid-area: scopes;
+}
+
+#team {
+  grid-area: team;
+}
+
+#primary {
+  grid-area: primary;
+}
+
+#timeline {
+  grid-area: timeline;
+}
+
+.grid-container {
+  background-color: blue;
+
+  display: grid;
+  /* This grid layout contains 12 columns and 2 rows: */
+  grid-template-areas:
+    "goals goals goals goals goals goals team team team timeline timeline timeline"
+    "scopes scopes scopes scopes scopes scopes primary primary primary timeline timeline timeline";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-item {
+  padding: 10px 10px 50px 10px;
+  margin: 0;
+  background-color: rgb(240, 248, 255);
+}
+
+.title {
+  padding: 0px 0px 10px 0px;
+  margin: 0;
+
+  color: rgb(53, 15, 255);
+  border-bottom: 1px solid #d2d1d1;
+}
+
+/** The row of each section **/
+.grid-content {
+  padding: 0px;
+  margin: 0;
+}
+
+/* Sub-title of each row */
+.row-sub-title {
+  font-weight: bold;
+}
+
+.grid-content-row {
+  padding: 10px 20px;
+  margin: 0;
+
+  display: flex;
+  gap: 40px;
+}
+
+/** The Icons **/
+.symbol {
+  font-size: 24px;
+  text-align: center;
+}
+
+/* GOALS Row */
+#goals .grid-content-row {
+  border-bottom: 1px solid #d2d1d1;
+  padding: 10px 40px;
+}
+
+/* SCOPES Col */
+#scopes .grid-content {
+  display: flex;
+  gap: 30px;
+}
+
+#scopes .col-sub-title {
+  text-transform: uppercase;
+  font-weight: bold;
+
+  padding: 0;
+  margin: 0px 0px 20px 0px;
+}
+
+#scopes .grid-content-col {
+  padding: 10px;
+  margin: 0;
+}
+
+/* TEAM Row */
+#team .symbol {
+  /* Use flex to layout the position of the icon easier */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#team i {
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* PRIMARY Row */
+#primary .symbol {
+  position: relative;
+
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+
+  padding: 10px;
+  margin: auto 0;
+
+  background-color: black;
+  color: #fff;
+  font-size: 18px;
+}
+
+/* <i>: the container of the actual vector graphic
+   "before" inside <i>: the actual graphic */
+#primary i::before {
+  /* Keep the icon always in the center of the span container */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* TIMELINE row */
+#timeline .grid-content-row {
+  padding-right: 0px;
+}
+
+#timeline .number {
+  font-size: 24px;
+
+  padding: 10px 0px;
+  margin: auto 0;
+}
+
+#timeline span {
+  border: 1px solid #504e4e;
+  border-radius: 50%;
+  background-color: rgb(158, 136, 255);
+  color: #fff;
+
+  padding: 10px;
+  margin: 0;
+}
+
+#timeline .row-detail {
+  border-bottom: 1px solid green;
+  border-bottom-style: dashed;
+
+  padding: 10px 20px 10px 10px;
+  margin: 0;
+}

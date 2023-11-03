@@ -1,0 +1,65 @@
+/* Medium devices (tablets, 992px and less) */
+@media (max-width: 992px) {
+  /* .banner-text {
+    color: green;
+  } */
+
+  section > .container {
+    max-width: 100vw;
+  }
+
+  /* NAVIGATION BAR */
+  #nav-bar .container {
+    width: 100%;
+  }
+  /* Specifically set the margin right of "Lý lịch" to the profile picture */
+  .container > a:nth-child(2) {
+    margin-right: 30px;
+  }
+
+  /* Specifically set the margin left of "Chứng chỉ" to the profile picture */
+  .container > a:nth-child(4) {
+    margin-left: 30px;
+  }
+  /* Profile Picture */
+  .nav-profile-pic {
+    display: none;
+  }
+
+  /* JOB INFO */
+  #job-info .container {
+    padding: 0 80px;
+    display: block;
+    column-count: 2; /* To create the "Masonry layout" */
+  }
+
+  .tablet-grid-cell {
+    padding: 0;
+    margin: 0;
+    /* To fit the item into the "Masonry column" */
+    display: inline-block;
+    width: 100%;
+  }
+
+  /** CERTIFICATE **/
+  #certificate .container {
+    max-width: 100%;
+    padding: 20px 40px;
+  }
+
+  .certificate-image {
+    grid-column: 1 / -1;
+  }
+
+  .certificate-detail {
+    margin: 0px;
+    grid-column: 1 / -1;
+  }
+
+  /** PROJECT **/
+  #project .container {
+    max-width: 100%;
+    padding: 20px 40px;
+    font-size: 1.5vw; /* make the font-size scalable as the width of the container change */
+  }
+}

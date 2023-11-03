@@ -1,0 +1,45 @@
+/* Medium devices (tablets, 992px and less) */
+@media (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "goals" "scopes" "team" "primary" "timeline";
+
+    grid-gap: 15px;
+    padding: 20px;
+  }
+
+  .grid-content-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* SCOPES Col */
+  #scopes .grid-content {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* PRIMARY Row */
+  #primary .symbol {
+    padding: 10px;
+    margin: auto;
+  }
+
+  /* TIMELINE row */
+  #timeline .grid-content-row {
+    margin: 20px auto;
+  }
+
+  #timeline .number {
+    /* border: 1px solid green; */
+    padding: 0px;
+  }
+
+  #timeline span {
+    margin: 0 0 0 10px;
+  }
+
+  #timeline .row-detail {
+    padding: 0px 20px 10px 10px;
+  }
+}

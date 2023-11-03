@@ -1,0 +1,654 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+section > .container {
+  width: 1170px;
+  margin: auto;
+  display: block;
+  font-size: 16px;
+
+  padding: 30px 50px;
+}
+
+/* BANNER */
+#banner {
+  position: relative;
+  height: 60vh;
+
+  /* Create a dark overlay on top of the background image to make the text more readable */
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center top; /* sets the starting position of a background image to be centered at top */
+  color: #fff;
+}
+
+.banner-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  line-height: 1.3;
+  font-size: 24px;
+  white-space: nowrap; /* prevent the text from wrapping */
+}
+
+.banner-text span {
+  color: #ced4da;
+  font-size: 16px;
+  white-space: nowrap; /* prevent the text from wrapping */
+}
+
+/* NAVIGATION BAR */
+#nav-bar {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+#nav-bar .container {
+  position: relative; /* relative container for the profile picture */
+  padding: 0px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container a,
+.nav-name {
+  display: inline-block;
+}
+
+/* Selects all <a> elements where the parent is an element with class ".container"*/
+.container > a {
+  border-left: 1px solid #eeeeee;
+
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Specifically set the right border of "Lý lịch" tag va "Dự Án" tag*/
+.container > a:last-child,
+.container > a:nth-child(2) {
+  border-right: 1px solid #eeeeee;
+}
+
+/* Specifically set the margin right of "Lý lịch" to the profile picture */
+.container > a:nth-child(2) {
+  margin-right: 150px;
+}
+
+/* Specifically set the margin left of "Chứng chỉ" to the profile picture */
+.container > a:nth-child(4) {
+  margin-left: 150px;
+}
+
+/* Profile Picture */
+.nav-profile-pic {
+  position: absolute; /* relative to #nav-bar .container */
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -25%);
+
+  width: 150px;
+  height: 150px;
+
+  border: 10px solid #fff;
+  border-radius: 50%;
+  background-image: url("../images/profile-pic.jpg");
+  background-size: cover;
+
+  display: inline-block;
+}
+
+/** ICON **/
+/* Set the color of each icon to #4dabf7*/
+.icon-color {
+  color: #4dabf7;
+}
+
+/* ABOUT */
+.section-title,
+.target-content,
+#personal-info .info {
+  padding: 0px;
+  margin: 30px 0;
+}
+
+#target,
+#personal-info {
+  padding: 40px;
+}
+
+/** TARGET **/
+.target-content {
+  line-height: 1.5em;
+}
+
+.target-content b {
+  font-weight: normal;
+}
+
+/** PERSONAL INFO **/
+#personal-info {
+  background-color: #eeeeee;
+}
+
+#personal-info .info {
+  list-style-type: none;
+  line-height: 2em;
+}
+
+#personal-info span {
+  font-weight: bold;
+}
+
+/* Styling pesonal info icons */
+#personal-info .icon-links-info {
+  margin: 0px;
+  padding: 0px;
+}
+
+.icon-links-info a {
+  margin-right: 10px;
+}
+
+/* JOB INFO */
+#job-info {
+  padding: 0px;
+  margin: 0px;
+}
+
+#job-info .container {
+  padding: 20px 100px;
+  margin: 0px auto;
+
+  /* Using Grid Layout to make three columns to have to same size */
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    minmax(0, 1fr)
+  ); /* create 3 columns with exact same with; minmax(0, 1fr) allows the grid tracks to be as small as 0 but as large as 1fr */
+  /* grid-template-columns: repeat(3, 1fr); */
+  justify-content: center;
+  column-gap: 20px;
+}
+
+/* Change the order of each cells */
+/* 1 */
+.order-exp {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+/* 2 */
+.order-edu {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+/* 3 */
+.order-act {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+/* 4 */
+.order-hobby {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+/* 5 */
+.order-lan {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+/* 6 */
+.order-skill {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Use this class to make the "Masonry layout" at the Tablet screen size easier */
+.tablet-grid-cell {
+  padding: 0;
+  margin: 0;
+
+  /* To layout all cells to have same width and cells in same row to have same height */
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.job-info-grid-cell {
+  border: 1px solid #d2d1d1;
+  padding: 50px 20px;
+
+  /* Using Grid to layout the content in each colunmns easier  */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns, each is 1fr */
+  gap: 20px;
+  /* justify-content: center; */
+  align-content: start;
+}
+
+.job-info-title {
+  padding: 20px 0;
+
+  grid-column: 1 / 4; /* span from grid line 1 - grid line 4 */
+}
+
+/* Job Info First Row */
+/* Experience, Education, and Activities */
+.job-info-detail-row-1 {
+  position: relative;
+  padding-left: 30px;
+
+  line-height: 1.5;
+
+  grid-column: 1 / -1; /* span from grid line 1 - the last grid line */
+}
+
+/* Creating the bullet point in front of each infomation */
+.job-info-detail-row-1::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #4dabf7;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform: translate(
+    0,
+    50%
+  ); /* make the bullet point to be vertically aligned with the line of text */
+}
+
+.job-info-sub-title {
+  font-weight: bold;
+}
+
+.job-info-date {
+  font-style: italic;
+
+  margin-bottom: 5px;
+}
+
+/* Experience */
+/* Make "Hiện tại" text to be white with #4dabf7 background */
+.job-info-date span {
+  background-color: #4dabf7;
+  color: #fff;
+
+  padding: 0px 10px;
+  border-radius: 7px;
+}
+
+/* Job Info 2nd Row */
+.job-info-detail-row-2 {
+  grid-column: 1 / -1;
+
+  /* Using Grid Layout to layout the content inside "Sở thích", "Ngôn ngữ", and "Kỹ năng" */
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* create 4 columns with exact same with; minmax(0, 1fr) allows the grid tracks to be as small as 0 but as large as 1fr */
+  column-gap: 5px;
+  row-gap: 10px;
+}
+
+/* Hobby */
+.job-info-row-2-hobby-content {
+  font-size: 14px;
+  text-align: center;
+
+  padding: 0;
+  margin: 0;
+}
+
+/* Language, and Skill */
+/* Layout the content of #language, and #skill */
+.job-info-detail-row-2 .job-info-row-2-content {
+  grid-column: 1 / -1;
+}
+
+.professional-level span {
+  background-color: #4dabf7;
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  margin-right: 10px;
+}
+
+/* Styling job info icons */
+.job-info-title-icon {
+  margin: 20px 20px 20px 0;
+
+  grid-column: 4 / -1; /* span from grid line 4 - the last grid line */
+  align-self: center;
+  justify-self: end;
+}
+
+.ic-size {
+  transform: scale(3);
+  color: #d2d1d1;
+}
+
+/* Layout the hobby icons */
+#hobby .job-info-detail-row-2 {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* <i>: the container of the actual vector graphic
+   "before" inside <i>: the actual graphic
+   This is to center the icon inside the circle */
+#hobby .ic-hobby-small {
+  position: relative;
+  border: 1px solid #4dabf7;
+  border-radius: 50%;
+  padding: 15px;
+  color: #4dabf7;
+
+  transform: scale(1.5);
+}
+
+#hobby .ic-hobby-small::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0px;
+  padding: 0;
+}
+
+/** CERTIFICATE **/
+#certificate {
+  padding: 0px;
+  margin: 20px 0;
+}
+
+#certificate .container {
+  padding: 20px 100px;
+  margin: 0px auto;
+}
+
+/* Using Grid Layout to layout the position of each certificate */
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    minmax(0, 1fr)
+  ); /* create 2 columns with exact same with; minmax(0, 1fr) allows the grid tracks to be as small as 0 but as large as 1fr */
+  row-gap: 20px;
+}
+
+.certificate-item {
+  /* border: 1px solid green; */
+  padding: 0px 20px 0px 0px;
+  margin: 0px 20px 0px 0px;
+
+  /* Using Grid Layout to layout the position of the content inside each certificate */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+/* Disable the right padding, right margin of the second certificate */
+.certificate-item:nth-child(2) {
+  padding: 0px;
+  margin: 0px;
+}
+
+.certificate-image {
+  /* border: 1px solid red; */
+  display: inline-block;
+  margin: 0;
+  text-align: center; /*to make sure that the image is in the center of it's container*/
+
+  grid-column: 1 / span 3;
+}
+
+.certificate-image img {
+  width: 100%;
+  height: auto;
+}
+
+.certificate-detail {
+  padding: 0;
+  margin: 0 20px;
+
+  grid-column: 4 / -1;
+}
+
+.certificate-detail-sub-title {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.certificate-vertical-border {
+  border-right: 1px solid #d6c08d;
+}
+
+/* Horizontal border line */
+.certificate-grid hr {
+  border-top: 1px solid #d6c08d;
+
+  grid-column: 1 / -1;
+}
+
+/** PROJECT **/
+#project {
+  padding: 0px;
+  margin: 20px 0;
+}
+
+#project .container {
+  padding: 20px 100px;
+  margin: 0px auto;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.project-item {
+  border: 1px solid #d2d1d1;
+}
+
+/* Project Images */
+.project-image {
+  /* height: 30%; */
+  overflow: hidden;
+  border-bottom: 1px solid #d2d1d1;
+  margin: 0;
+  padding: 0;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Project sub-title */
+.project-sub-title {
+  margin: 0;
+  padding: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 1px solid #d2d1d1;
+}
+
+#project a {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+
+  text-decoration: none;
+  color: #000;
+}
+
+/* Project date, made-for, and role */
+.project-info,
+.project-details {
+  border-bottom: 1px solid #d2d1d1;
+}
+
+.project-item .project-details:last-child {
+  border: none;
+}
+
+.project-info {
+  max-width: 100%;
+  margin: 0;
+  padding: 20px 0px;
+
+  display: flex;
+  justify-content: flex-start;
+  /*white-space: nowrap; prevent elements to wrap to a new line  if they overflow */
+}
+
+.project-date {
+  padding: 0px 10px;
+  margin: 0 10px 0px 20px;
+  border-radius: 10px;
+
+  background-color: #4dabf7;
+  color: #fff;
+
+  align-self: flex-start;
+}
+
+.tablet-project-icon-left {
+  align-self: flex-start;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+
+.project-made-for {
+  align-self: flex-start;
+  margin-right: 10px;
+}
+
+.project-role {
+  align-self: flex-start;
+}
+
+/* Project Details*/
+.project-details {
+  margin: 0;
+  padding: 10px;
+
+  display: flex;
+  column-gap: 10px;
+}
+
+/* .project-details .project-description {
+  grid-column: 1 / 2;
+}
+
+.project-details .project-description-content {
+  grid-column: 2 / -1;
+  margin-bottom: 0;
+} */
+
+/* Project icons */
+.project-info i {
+  color: #d2d1d1;
+}
+
+/** FOOTER **/
+#footer {
+  padding: 0px;
+  margin: 20px 0;
+}
+
+#footer .container {
+  max-width: 100%;
+  padding: 50px 100px;
+  margin: 0px auto;
+}
+
+#footer ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+.footer-links {
+  display: inline-block;
+  font-size: 2vw;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #000;
+
+  display: inline-block;
+}
+
+/* Footer icons */
+.footer-icon {
+  border-radius: 50%;
+  padding: 3px;
+  margin-right: 5px;
+
+  display: inline-block;
+}
+
+.footer-gap-bt-icons {
+  margin: 0 25px;
+}
+
+.footer-icon-fb,
+.footer-icon-linked {
+  background-color: #4dabf7;
+  color: #fff;
+}
+
+/* Scale the Github icon 2 time bigger than the fb and linked icons to make them look the same size*/
+.footer-icon-github {
+  transform: scale(2);
+}
+
+#footer span {
+  color: #d2d1d1;
+}

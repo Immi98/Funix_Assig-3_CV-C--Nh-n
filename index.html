@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Large devices (laptops, 993px and up) -->
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <!-- Medium devices (tablets, 992px and less) -->
+    <link href="./css/tablet.css" rel="stylesheet" media="(max-width: 992px)" />
+    <!-- Small devices (mobile, 576px and less) -->
+    <link href="./css/mobile.css" rel="stylesheet" media="(max-width: 576px)" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Installation -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <div id="banner" style="padding: 50px">
+      <div class="banner-text">
+        <h1>Đào Khả Hân</h1>
+        <span>Front-end Developer</span>
+      </div>
+    </div>
+
+    <section id="nav-bar">
+      <nav class="container">
+        <a href="#about"><i class="icon-user icon-color"></i>Thông tin</a>
+        <a href="#personal-info"
+          ><i class="icon-doc-text-inv icon-color"></i>Lý lịch</a
+        >
+        <div class="nav-profile-pic"></div>
+        <a href="#certificate"
+          ><i class="icon-mail-alt icon-color"></i>Chứng chỉ</a
+        >
+        <a href="#project"><i class="icon-star-1 icon-color"></i>Dự Án</a>
+      </nav>
+    </section>
+
+    <section id="about" class="bg-grey">
+      <div class="container-fluid">
+        <!-- Boostrap Gridlayout -->
+        <div class="row">
+          <div id="target" class="col-sm">
+            <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+            <p class="target-content">
+              Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+              của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+              <b>Front-end Developer</b>, có thể vận dụng những kiến thức đã
+              được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
+              như hoàn thành tốt nhất công việc được giao.
+            </p>
+          </div>
+
+          <div id="personal-info" class="col-sm">
+            <h1 class="section-title">Thông tin cá nhân</h1>
+            <ul class="mt-40 info">
+              <li><span>Giới tính</span> : Nữ</li>
+              <li><span>Ngày sinh</span> : 31/07/1998</li>
+              <li><span>Điện thoại</span> : (+84) 939201304</li>
+              <li><span>Email</span> : handkFX27138@funix.edu.vn</li>
+              <li><span>Địa chỉ</span> : Cần Thơ, Việt Nam</li>
+              <li><span>Website</span> : https://abc.tech</li>
+            </ul>
+            <div class="icon-links-info">
+              <a href="#"><i class="icon-twitter icon-color"></i></a>
+              <a href="https://www.facebook.com/nany.dawn" target="_blank"
+                ><i class="icon-facebook icon-color"></i
+              ></a>
+              <a href="#"><i class="icon-gplus icon-color"></i></a>
+              <a href="https://www.linkedin.com/in/han-dao-hd/" target="_blank"
+                ><i class="icon-linkedin icon-color"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="job-info">
+      <div class="container">
+        <div class="order-exp tablet-grid-cell">
+          <div
+            id="experience"
+            class="job-info-grid-cell"
+            style="margin-top: 20px"
+          >
+            <div class="job-info-title">
+              <h1>Kinh nghiệm</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-toolbox ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">
+                Engineering Administrative Assistant - Công ty CCI
+              </div>
+              <div class="job-info-date">10/2021 - <span>Hiện tại</span></div>
+              <div class="job-info-duty">
+                <p>
+                  - Xây dựng, cập nhật và bảo trì website của công ty dựa theo
+                  yêu cầu của cấp trên.
+                </p>
+                <p>
+                  - Thiết kế bản vẽ 2D cho các sản phẩm của công ty bằng phần
+                  mền AutoCAD
+                </p>
+                <p>- Quản lí và sửa đổi dữ liệu qua phần mềm QuicksBook</p>
+              </div>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">
+                Bookkeeper - Công ty Weichert
+              </div>
+              <div class="job-info-date">06/2021-04/2022</div>
+              <div class="job-info-duty">
+                <p>- Quản lí và theo dõi chi tiêu của công ty.</p>
+                <p>- Báo cáo tổng thu chi bằng phần mềm Excel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-skill tablet-grid-cell">
+          <div id="skill" class="job-info-grid-cell" style="margin-top: 20px">
+            <div class="job-info-title">
+              <h1>Kỹ năng</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-tools-2 ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-2">
+              <div class="job-info-row-2-content">
+                <p>HTML/CSS:Fundamental</p>
+                <div class="professional-level">
+                  <span></span>
+                  <span></span>
+                  <span style="background-color: #d2d1d1"></span>
+                </div>
+              </div>
+              <div class="job-info-row-2-content">
+                <p>JavaScript:Fundamental</p>
+                <div class="professional-level">
+                  <span></span>
+                  <span style="background-color: #d2d1d1"></span>
+                  <span style="background-color: #d2d1d1"></span>
+                </div>
+              </div>
+              <div class="job-info-row-2-content">
+                <p>NodeJS:Fundamental</p>
+                <div class="professional-level">
+                  <span></span>
+                  <span style="background-color: #d2d1d1"></span>
+                  <span style="background-color: #d2d1d1"></span>
+                </div>
+              </div>
+              <div class="job-info-row-2-content">
+                <p>Bootstrap 5:Fundamental</p>
+                <div class="professional-level">
+                  <span></span>
+                  <span style="background-color: #d2d1d1"></span>
+                  <span style="background-color: #d2d1d1"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-lan tablet-grid-cell">
+          <div
+            id="language"
+            class="job-info-grid-cell"
+            style="margin-top: 20px"
+          >
+            <div class="job-info-title">
+              <h1>Ngôn ngữ</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-mic ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-2">
+              <div class="job-info-row-2-content">
+                <p>Tiếng Anh</p>
+                <div class="professional-level">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-act tablet-grid-cell">
+          <div
+            id="activities"
+            class="job-info-grid-cell"
+            style="margin-top: 20px"
+          >
+            <div class="job-info-title">
+              <h1>Hoạt động</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-toolbox ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">
+                Trường THPT Evangle Christian
+              </div>
+              <div class="job-info-date">02/2019-03/2019</div>
+              <div class="job-info-duty">
+                <p>- Tình nguyện viên</p>
+                <p>- Giảng dạy cho các em mầm non.</p>
+              </div>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">Nhà Hàng Bình Dương</div>
+              <div class="job-info-date">08/2021-10/2021</div>
+              <div class="job-info-duty">
+                <p>- Tình nguyện viên</p>
+                <p>- Thiết kế trang web cho nhà hàng.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-edu tablet-grid-cell">
+          <div
+            id="education"
+            class="job-info-grid-cell"
+            style="margin-top: 20px"
+          >
+            <div class="job-info-title">
+              <h1>Học vấn</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-pencil ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">Funix</div>
+              <div class="job-info-date">06/2023-Hiện tại</div>
+              <div class="job-info-duty">
+                <p>- Funix Theo học chứng chỉ doanh nghiệp nhánh Front-end.</p>
+              </div>
+            </div>
+            <div class="job-info-detail-row-1">
+              <div class="job-info-sub-title">Cử nhân - Queens College</div>
+              <div class="job-info-date">06/2016-01/2021</div>
+              <div class="job-info-duty">
+                <p>- Chuyên ngành: Khoa học máy tính.</p>
+                <p>- GPA: 3.6 / 4</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-hobby tablet-grid-cell">
+          <div id="hobby" class="job-info-grid-cell" style="margin-top: 20px">
+            <div class="job-info-title">
+              <h1>Sở thích</h1>
+            </div>
+            <div class="job-info-title-icon">
+              <i class="ic-telescope ic-size"></i>
+            </div>
+            <div class="job-info-detail-row-2">
+              <div class="job-info-row-2-hobby-content">
+                <i class="ic-basket ic-hobby-small"></i>
+                <p>Cắm trại</p>
+              </div>
+              <div class="job-info-row-2-hobby-content">
+                <i class="ic-hotairballoon ic-hobby-small"></i>
+                <p>Leo núi</p>
+              </div>
+              <div class="job-info-row-2-hobby-content">
+                <i class="ic-strategy ic-hobby-small"></i>
+                <p>Thiền</p>
+              </div>
+              <div class="job-info-row-2-hobby-content">
+                <i class="ic-megaphone ic-hobby-small"></i>
+                <p>Nấu ăn</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificate" class="bg-grey">
+      <div class="container">
+        <div class="certificate-title">
+          <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        </div>
+        <div class="certificate-grid">
+          <!-- 1 -->
+          <div class="certificate-item certificate-vertical-border">
+            <div class="certificate-image">
+              <img src="./images/certificate.jpg" alt="certificate 1" />
+            </div>
+            <div class="certificate-detail">
+              <div class="certificate-detail-sub-title">
+                CUỘC THI NEW IDEA - Queens College
+              </div>
+              <div class="certificate-content">
+                <p>- Giải nhì</p>
+                <p>- Year: 2022</p>
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="certificate-item">
+            <div class="certificate-image">
+              <img src="./images/certificate.jpg" alt="certificate 2" />
+            </div>
+            <div class="certificate-detail">
+              <div class="certificate-detail-sub-title">
+                CHỨNG CHỈ LẬP TRÌNH JAVASCRIPT - Udemy
+              </div>
+              <div class="certificate-content">
+                <p>- Chứng chỉ được trao bởi Udemy</p>
+                <p>- Year: 2021</p>
+              </div>
+            </div>
+          </div>
+          <!-- Horizontal border -->
+          <hr />
+          <!-- 3 -->
+          <div class="certificate-item">
+            <div class="certificate-image">
+              <img src="./images/certificate.jpg" alt="certificate 3" />
+            </div>
+            <div class="certificate-detail">
+              <div class="certificate-detail-sub-title">
+                Chứng chỉ lập trình HTML - W3Schools
+              </div>
+              <div class="certificate-content">
+                <p>- Chứng chỉ được trao bởi W3Schools</p>
+                <p>- Year: 2023</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="project">
+      <div class="container">
+        <div class="project-title">
+          <h1 class="section-title">Dự án</h1>
+        </div>
+        <div class="project-grid">
+          <!-- P1 -->
+          <div class="project-item">
+            <div class="project-image">
+              <a href="./digital-cv-p1.html" target="_blank">
+                <img src="./images/project-1.png" alt="project 1" />
+              </a>
+            </div>
+            <div class="project-sub-title">
+              <a href="./digital-cv-p1.html" target="_blank">CV cá nhân </a>
+            </div>
+            <div class="project-info">
+              <div class="project-date">2023</div>
+              <div class="tablet-project-icon-left">
+                <div class="project-made-for">
+                  <i class="icon-user-1"></i>
+                  <span>FUNIX</span>
+                </div>
+                <div class="project-role">
+                  <i class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Mô tả</span>
+              <p class="project-description-content">
+                Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như
+                kỹ năng nghề nghiệp
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Nhiệm vụ</span>
+              <p class="project-description-content">
+                - Phát triển - Tối ưu code - Xử lý lỗi.
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Công nghệ</span>
+              <p class="project-description-content">- HTML, CSS</p>
+            </div>
+          </div>
+          <!-- End P1 -->
+
+          <!-- P2 -->
+          <div class="project-item">
+            <div class="project-image">
+              <a href="./digital-cv-p2.html" target="_blank">
+                <img src="./images/project-2.png" alt="project 2" />
+              </a>
+            </div>
+            <div class="project-sub-title">
+              <a href="./digital-cv-p2.html" target="_blank"
+                >Ứng dụng dự báo thời tiết
+              </a>
+            </div>
+            <div class="project-info">
+              <div class="project-date">2022</div>
+              <div class="tablet-project-icon-left">
+                <div class="project-made-for">
+                  <i class="icon-user-1"></i>
+                  <span>FUNIX</span>
+                </div>
+                <div class="project-role">
+                  <i class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Mô tả</span>
+              <p class="project-description-content">
+                Ứng dụng giúp kiểm tra thời tiết ở nơi bạn đang ở và cũng đồng
+                thời cho phép bạn kiểm tra thời tiết ở nơi bất kỳ.
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Nhiệm vụ</span>
+              <p class="project-description-content">
+                - Phát triển - Tối ưu code - Xử lý lỗi.
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Công nghệ</span>
+              <p class="project-description-content">- HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <!-- End P2 -->
+
+          <!-- P3 -->
+          <div class="project-item">
+            <div class="project-image">
+              <a href="./digital-cv-p3.html" target="_blank">
+                <img src="./images/project-3.png" alt="project 3" />
+              </a>
+            </div>
+            <div class="project-sub-title">
+              <a href="./digital-cv-p3.html" target="_blank"
+                >Ứng dụng random color generator
+              </a>
+            </div>
+            <div class="project-info">
+              <div class="project-date">2021</div>
+              <div class="tablet-project-icon-left">
+                <div class="project-made-for">
+                  <i class="icon-user-1"></i>
+                  <span>FUNIX</span>
+                </div>
+                <div class="project-role">
+                  <i class="icon-lamp"></i>
+                  <span>Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Mô tả</span>
+              <p class="project-description-content">
+                Ứng dụng giúp người dùng chọn màu mã hex cho một màu bất kì.
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Nhiệm vụ</span>
+              <p class="project-description-content">
+                - Phát triển - Tối ưu code - Xử lý lỗi.
+              </p>
+            </div>
+            <div class="project-details">
+              <span class="project-description">Công nghệ</span>
+              <p class="project-description-content">- HTML, CSS, JavaScript</p>
+            </div>
+          </div>
+          <!-- End P3 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <ul>
+          <li class="footer-links">
+            <a href="https://www.facebook.com/nany.dawn" target="_blank"
+              ><i
+                class="icon-facebook footer-icon footer-icon-fb icon-color"
+              ></i
+              ><span>Facebook</span></a
+            >
+          </li>
+          <li class="footer-links footer-gap-bt-icons">
+            <a href="https://www.linkedin.com/in/han-dao-hd/" target="_blank"
+              ><i
+                class="icon-linkedin footer-icon footer-icon-linked icon-color"
+              ></i
+              ><span>Linkedin</span></a
+            >
+          </li>
+          <li class="footer-links">
+            <a href="https://github.com/Immi98" target="_blank"
+              ><i
+                class="icon-github-circled footer-icon footer-icon-github icon-color"
+              ></i
+              ><span>Github</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

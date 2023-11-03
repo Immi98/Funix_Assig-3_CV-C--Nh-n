@@ -1,0 +1,112 @@
+/* Extra small devices (mobiel, 576px and less) */
+@media (max-width: 576px) {
+  /* .banner-text {
+    color: blue;
+  } */
+
+  /* NAVIGATION BAR */
+  #nav-bar .container {
+    display: inline-block; /* Change from Flexbox to inline-block to rearrange the navbar menu to be vertical */
+  }
+
+  /* Selects all <a> elements where the parent is an element with class ".container"*/
+  .container > a {
+    border: none;
+    display: block; /* Make to the navbar menu to be vertically aligned */
+    text-align: left;
+  }
+
+  /* Specifically set the right border of "Lý lịch" tag va "Dự Án" tag*/
+  .container > a:last-child,
+  .container > a:nth-child(2) {
+    border-right: none;
+  }
+
+  /* Specifically set the margin right of "Lý lịch" to the profile picture */
+  .container > a:nth-child(2) {
+    margin-right: 0px;
+  }
+
+  /* Specifically set the margin left of "Chứng chỉ" to the profile picture */
+  .container > a:nth-child(4) {
+    margin-left: 0px;
+  }
+
+  /* ABOUT */
+  #about .container {
+    width: 100%;
+  }
+
+  /* JOB INFO */
+  #job-info .container {
+    width: 100%;
+    padding: 0;
+    column-count: 1;
+  }
+
+  /** CERTIFICATE **/
+  #certificate .container {
+    padding: 20px;
+  }
+
+  .certificate-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+  .certificate-item {
+    border-bottom: 1px solid #d6c08d;
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  /* Delete the border bottom of the last certificate */
+  .certificate-item:last-child {
+    border-bottom: none;
+  }
+
+  .certificate-vertical-border {
+    border-right: none;
+  }
+
+  #certificate hr {
+    display: none;
+  }
+
+  /** PROJECT **/
+  .project-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 30px;
+  }
+
+  #project .container {
+    padding: 20px;
+    font-size: 16px;
+  }
+
+  .project-info,
+  .tablet-project-icon-left {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-made-for,
+  .project-role {
+    margin: 0 10px 0px 20px;
+  }
+
+  /** FOOTER **/
+  #footer .container {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .footer-links {
+    font-size: 5vw;
+  }
+
+  .footer-links span {
+    display: none;
+  }
+}
